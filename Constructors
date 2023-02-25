@@ -1,0 +1,43 @@
+
+
+public class Box {
+
+		double width;
+	    double height;
+	    double depth;
+	Box ()
+	{
+	width=10;
+	height=10;
+	depth=10;
+	}
+
+	   double volume()
+	{
+	         return width*height*depth;
+
+	}
+
+
+
+	public static void main (String args [])
+	{       double vol;
+	       Box myBox1= new Box();
+		   Box myBox2= new Box();
+		   Box myBox3= new Box();
+		   Box myBox4= new Box();
+		  vol=myBox1.volume();
+		  vol=myBox2.volume();
+		  vol=myBox3.volume();
+		  vol=myBox4.volume();
+		  System.out.println("myBox1 volume :"+vol);
+		  System.out.println("myBox2 volume :"+vol);
+		  System.out.println("myBox3 volume : "+vol);
+		  System.out.println("myBox4 volume :"+vol);
+	    
+
+
+	}
+	}
+	
+
