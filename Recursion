@@ -1,0 +1,21 @@
+public class Box {
+
+
+int fact(int n){
+int result;
+if(n==1)
+return 1;
+
+  result=fact(n-1)*n;
+ return result;
+}
+public static void main(String[] args) {
+    Box f= new Box();
+    System.out.println("Factorial numberis 5:"+f.fact(5));
+          
+   
+     
+   
+
+}
+}
