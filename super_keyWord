@@ -1,0 +1,47 @@
+
+public class Men{
+    
+     String Name;
+     double height;
+     Men (String f, double h)
+     {
+          Name=f;
+            height=h;      
+     
+     
+     }
+    
+
+    void display ()
+    {
+        System.out.println("Name"+Name);
+        System.out.println("Height"+height);
+    
+    }
+}
+
+/// SECOND PART
+
+
+public class Women extends Men {
+   
+   int age;
+
+    public Women(String f, double h, int age) {
+        super(f, h); //caling men constructor
+        this.age = age;
+    }
+    
+ 
+   @Override
+    void display ()
+    {
+       super.display(); // calling Men display method
+        System.out.println("Age "+age);
+    
+    }
+    public static void main(String[] args) {
+     Women s= new Women ("MD. MASUD ALAM",6.2,22);   
+     s.display();
+    }
+}
