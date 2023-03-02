@@ -1,0 +1,44 @@
+public class Person{
+    
+     String name;
+     int age;
+     
+     void display ()
+     {
+         System.out.println(""+name);
+         System.out.println("" +age);
+     
+     }
+
+
+
+
+}
+//secod part
+public class Teacher extends Person {
+ 
+    
+    
+     
+    String qualification;
+      
+    @Override
+     void display ()
+     {
+         System.out.println(""+name);
+         System.out.println("" +age);
+          System.out.println(" "+qualification);
+       
+     }
+     public static void main(String[] args) {
+          Teacher s= new Teacher ();
+          s.age=22;
+          s.name="MASUD ALAM";
+           s.qualification="B.sc in CSE";
+           s.display();
+    
+    }  
+
+
+
+}
