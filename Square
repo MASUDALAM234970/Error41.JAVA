@@ -1,0 +1,21 @@
+class Alam {
+
+   int square (int value)
+   {
+        return value*value;
+
+   }
+
+
+public static void main(String[] args) {
+    
+    Alam s= new Alam();
+           
+        double sum=s.square(10);
+        System.out.println("square "+sum);
+}
+
+
+
+
+}
