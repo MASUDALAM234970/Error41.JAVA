@@ -1,0 +1,77 @@
+
+public class Men{
+    
+    private String name;
+     int age;
+       private String sex;
+      
+       void SetName( String n)
+       {
+             name=n;
+       }
+      String getName()
+      {
+        return name;
+      }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+}
+ //second part
+ 
+ 
+ 
+ 
+public class Women extends Men {
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+       void diplay(){
+       
+           System.out.println("Age "+age);
+       }
+    
+    //age
+     
+   private String qualification;
+      
+ 
+     public static void main(String[] args) {
+      Women s= new Women ();
+      Women s_= new Women ();
+      
+      s.SetName("MD.MASUD ALAM");
+    
+      s.setSex("Male");
+      s.setQualification("B.sc in CSE ");
+         System.out.println("Name "+s.getName());
+            s.age =22;
+            s.diplay();
+         System.out.println("SEX "+s.getSex());
+         System.out.println("Qualification "+s.getQualification());
+         
+         System.out.println("__________________________________");
+         s_.SetName("MONIKA ");
+          s_.setSex("Female");
+          s_.setQualification("B.sc in CSE");
+          System.out.println("Name "+s_.getName());
+            s_.age =21;
+            s_.diplay();
+         System.out.println("SEX "+s_.getSex());
+         System.out.println("Qualification "+s_.getQualification());
+     
+     } 
+
+
+
+}
