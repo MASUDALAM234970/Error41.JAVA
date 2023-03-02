@@ -1,0 +1,42 @@
+public class Alam {
+ 
+    private String name;
+    private int roll;
+   private int id ;
+
+   public String getName() {
+       return name;
+   }
+
+   public void setName(String name) {
+       this.name = name;
+   }
+
+   public int getRoll() {
+       return roll;
+   }
+
+   public void setRoll(int roll) {
+       this.roll = roll;
+   }
+
+   public int getId() {
+       return id;
+   }
+
+   public void setId(int id) {
+       this.id = id;
+   }
+   
+   public static void main(String[] args) {
+      
+       Alam s=new Alam();
+       s.setName("MAsud alam ");
+       s.setId(101);
+       s.setRoll(41);
+       System.out.println("Name"+s.getName());
+       System.out.println("ID"+s.getId());
+       System.out.println(" Roll"+s.getRoll());
+       
+   }
+}
