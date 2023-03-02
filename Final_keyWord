@@ -1,0 +1,25 @@
+final public class University {
+   
+  final  void display ()
+    {
+             System.out.println("University Information");
+    
+    }
+}
+
+// secod part
+public class Student extends  University{
+    void display2 ()
+    {
+             System.out.println("Student  Information");
+    
+    }
+          public static void main(String[] args) {
+             Student s= new Student ();
+             s.display();
+             s.display2();
+    }
+                  //final method Override hoy naaa
+}                     // final class extends hoy naaaa
+        /// more details 
+       //https://www.geeksforgeeks.org/final-keyword-in-java/
