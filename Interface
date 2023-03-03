@@ -1,0 +1,43 @@
+//public interface Teacher {
+// 
+//      void Assingment (); // by default public abstract 
+//    
+//    
+//    
+//}
+
+//public class Student implements Teacher {
+//    
+//         @Override
+//         public void Assingment () {
+//         
+//             System.out.println(" WE are submited assingment");
+//         
+//         }
+//    
+//    
+//}
+
+
+
+
+
+
+
+
+
+public class TECHER implements Teacher {
+    
+     @Override
+     public void Assingment () {
+         System.out.println("Dear Student goods jobs ");
+  
+                 }
+         public static void main(String[] args) {
+              Student s1= new Student ();
+              s1.Assingment();
+             TECHER   s= new  TECHER ();
+                s.Assingment();
+                
+    }
+   }
