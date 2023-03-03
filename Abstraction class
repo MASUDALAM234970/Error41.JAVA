@@ -1,0 +1,61 @@
+
+//public abstract class MobileUser {
+//   
+//    void call()     //non abstraction 
+//    {
+//    
+//          System.out.println("I am Mobile");
+//    
+//    
+//    }
+//    
+//   abstract void sendMeassage ();  //fully abstration
+//    //
+//    
+//}
+
+
+
+
+//public class Masud extends MobileUser {
+//   
+//    // call // sendmeassage
+//    
+//    @Override
+//    void sendMeassage ()
+//    {
+//          System.out.println("Hi I am MASUD ALAM ");
+//          System.out.println("DO YOU UNDERSTAND THIS TOPIC ");
+//    
+//    
+//    }
+//    
+//    
+//    
+//}
+
+public class Monika extends Masud {
+    
+    
+    @Override
+    void sendMeassage ()
+            
+    {
+        System.out.println(" HI I AM MONIKA");
+        System.out.println(" NO ! ");
+    }
+    
+
+    public static void main(String[] args) {
+       
+        MobileUser s;
+        s= new Masud();
+        s.sendMeassage();
+        //s.call();
+        s= new Monika();
+        s.sendMeassage();
+        
+        
+}  
+    }
+
