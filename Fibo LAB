@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+
+
+
+public class ERROR41 {
+
+       public static void main(String[] args) {
+     Scanner input= new Scanner (System.in);
+         System.out.print("Enter the Inter number");
+         
+         int n=input.nextInt();
+         input.close();
+         
+          int result= fibonacci (n); 
+          
+           System.out.println("the"+n+"th number in the Fibonacci series is : "+result);
+           
+    }
+       
+    public static int fibonacci (int n){
+    
+      if(n==0 || n==1)
+      
+           return n;
+      
+      else
+          
+          return fibonacci(n-1)+fibonacci(n-2);
+    } 
+}
